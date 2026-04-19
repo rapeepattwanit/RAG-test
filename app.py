@@ -85,7 +85,7 @@ sql_json_text = call_gemini(script_prompt_input, is_json=True)
 try:
   sql_script = json.loads(sql_json_text)['script']
 except:
-  return "ขออภัย ไม่สามารถสร้างคําสั9ง SQL ได้"\
+  return "ขออภัย ไม่สามารถสร้างคําสั่ง SQL ได้"\
 
 # 2. Query ข้อมูล
 df_result = query_to_dataframe(sql_script, db_name)
@@ -111,7 +111,7 @@ for message in st.session_state.messages:
     st.markdown(message["content"])
 
 # รับ Input
-if prompt := st.chat_input("พิมพ์คําถามที0นี0..."):
+if prompt := st.chat_input("พิมพ์คําถามที่นี่..."):
   # เก็บและแสดงข้อความ User
   st.session_state.messages.append({"role": "user", "content": prompt})
   with st.chat_message("user"):
