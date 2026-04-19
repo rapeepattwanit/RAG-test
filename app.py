@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas as pd
+import sqlite3
 from google import genai
 from google.genai import types
 import json
