@@ -83,6 +83,7 @@ answer_prompt = """
 ### Input Question: {question}
 ### Process Data:
 {raw_data}
+###ถ้าคำถามเป็นภาษาไหนให้ตอบคำตอบเป็นภาษานั้น
 ### Output: ตอบคำถามอย่างเป็นธรรมชาติ สั้นและกระชับ
 """
 
